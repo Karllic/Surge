@@ -58,7 +58,7 @@ cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/m
 cron "8 0 * * *"  script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/zongheng.js, tag=纵横小说
 cron "8 0 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js, tag=GitHub
 cron "8 0 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/steam.js, tag=Steam价格监控
-cron "8 0 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控
+cron "0 30 12 * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控
 
 
 # Sunert https://github.com/Sunert/Scripts/tree/master/Task
@@ -78,8 +78,8 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/toulanboy/scripts
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/weibo/weibotalk.js, timeout=600, tag=微博超话
 
 # dompling   https://github.com/dompling/Script
-cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/oneSay/oneSay.js, tag=每日一言
-cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/historyToday/index.js, tag=历史上的今天,
+cron "0 0 12 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/oneSay/oneSay.js, tag=每日一言
+cron "0 0 13 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/historyToday/index.js, tag=历史上的今天,
 cron "3 0 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/birthdayCountDown/index.js, tag=生日倒计时
 
 # songyangzz   https://github.com/songyangzz/QuantumultX
