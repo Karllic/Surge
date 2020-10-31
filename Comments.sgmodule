@@ -13,4 +13,4 @@ http-response https://avoscloud.com/* requires-body=1,script-path=https://raw.gi
 http-response http://115.28.168.103:8080/yiyan/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yiyan.js,tag=一言
 
 [MITM]
-hostname = 
+hostname =  ios.prod.ftl.netflix.com
