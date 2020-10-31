@@ -10,4 +10,4 @@ http-response ^https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList) req
 http-response ^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js, tag=联通轮播去广告
 
 [MITM]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,mp.weixin.qq.com,r.inews.qq.com,m.client.10010.com
+hostname =  %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,mp.weixin.qq.com,r.inews.qq.com,m.client.10010.com
