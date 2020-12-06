@@ -55,8 +55,5 @@ cron "0 0 8,18 * * *" script-path=https://raw.githubusercontent.com/MeetaGit/Mee
 # yichahucha    https://github.com/yichahucha/surge/tree/master
 cron "11 7 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js, tag=每日一句+蚂蚁森林收能量
 
-# Tartarus    https://github.com/Tartarus2014/Script
-cron "3 0 * * *" script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/DiDi.js, tag=滴滴出行
-
 # Dachaw  
 cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/nCoVrumors.js,tag=疫情辟谣
