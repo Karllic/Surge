@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
 
 http-request ^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js
