@@ -11,6 +11,9 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #网络详情
 NET_info = script-name=NET_info,update-interval=1
 
+# 刷新DNS
+flushDNS = script-name=flushDNS,update-interval=600
+
 #机场信息
 Sub_info1 = script-name=Sub_info1,update-interval = 43200
 
@@ -32,13 +35,16 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 #应当修改的字段 group 代理策略组名称
 NET_info = type=generic,timeout=10,script-path=https://github.com/Karllic/ipip/blob/master/ipapi.js,argument=icon=externaldrive.connected.to.line.below&color=#9a7ff7&group=𝗛𝗞
 
+# 刷新DNS
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b&server=false
+
 #机场信息
 #必须修改的字段:你encode后的机场订阅链接
 Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fflowercloud.icu%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D446%26token%3DArhw1upexkV9%26sip002%3D1&reset_day=29&title=FlowerCloud&icon=opticaldisc&color=#5AC8FA
 
 #机场信息
 #必须修改的字段:你encode后的机场订阅链接
-Sub_info2 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fapi.pay.pm%2Fapi%2Fv1%2Flink%2Fsip002%3Ftoken%3DcSNzv4vvQyrS03jp&reset_day=18&title=BlinkLoad&icon=opticaldisc&color=#637990
+Sub_info2 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fapi.pay.pm%2Fapi%2Fv1%2Flink%2Fsip002%3Ftoken%3DcSNzv4vvQyrS03jp&reset_day=18&title=BlinkLoad&network&color=#86abee
 
 #netflix策略组控制
 nf_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633090677159, argument=title=Netflix 解锁检测
