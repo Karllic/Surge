@@ -40,7 +40,7 @@ flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 
 #机场信息
 #必须修改的字段:你encode后的机场订阅链接
-Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fflowercloud.icu%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D446%26token%3DArhw1upexkV9%26sip002%3D1&reset_day=29&title=FlowerCloud&icon=network&color=#86abee
+Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fflowercloud.icu%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D446%26token%3DArhw1upexkV9%26sip002%3D1&reset_day=29&title=Flower&icon=network&color=#86abee
 
 #机场信息
 #必须修改的字段:你encode后的机场订阅链接
