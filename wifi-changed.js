@@ -9,7 +9,7 @@ if (wifiChanged()) {
   $notification.post(
     'Surge',
     `Wi-Fi changed to ${$network.wifi.ssid || 'cellular'}`,
-    `use ${mode} mode`
+    `Use ${mode} mode`
   );
 }
 
