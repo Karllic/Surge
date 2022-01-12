@@ -1,6 +1,6 @@
 const ssid = "'Santiano_5G' , 'Santiano'";
 const name = "DH-DoH";
-let home = $network.wifi.ssid === ssid;
+let home = $network.wifi.ssid === Santiano_5G;
 
 const getModuleStatus = new Promise((resolve) => {
   $httpAPI("GET", "v1/modules", null, (data) =>
