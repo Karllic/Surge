@@ -4,18 +4,18 @@ let home = $network.wifi.ssid === ssid;
 
 const getModuleStatus = new Promise((resolve) => {
   $httpAPI("GET", "v1/modules", null, (data) =>
-      resolve(data.enabled.includes(name))
+      resolve(data.enabled.includes(DH-DoH))
   );
 });
 
 getModuleStatus.then((enabled) => {
   if (home && !enabled) {
   //家里,未开启模块 => 开启
-    $notification.post("Event", `开启${name}模块`, "");
+    $notification.post("Event", `开启${DH-DoH}模块`, "");
     enableModule(true);
   } else if (!home && enabled) {
     //不是家里,开启了模块 => 关闭
-    $notification.post("Event", `关闭${name}模块`, "");
+    $notification.post("Event", `关闭${DH-DoH}模块`, "");
     enableModule(false);
   } else {
     //其他情况 => 重复触发 => 结束脚本
@@ -25,5 +25,5 @@ getModuleStatus.then((enabled) => {
 });
 
 function enableModule(status) {
-  $httpAPI("POST", "v1/modules", { [name]: status }, () => $done());
+  $httpAPI("POST", "v1/modules", { [DH-DoH]: status }, () => $done());
 }
