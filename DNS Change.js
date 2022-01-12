@@ -11,15 +11,12 @@ const getModuleStatus = new Promise((resolve) => {
 getModuleStatus.then((enabled) => {
   if (home && !enabled) {
   //家里,未开启模块 => 开启
-    $notification.post("Event", `开启${DH-DoH}模块`, "");
-    enableModule(true);
+    $notification.post`关闭${DH-DoH}模块`);
+    enableModule(false);
   } else if (!home && enabled) {
     //不是家里,开启了模块 => 关闭
-    $notification.post("Event", `关闭${DH-DoH}模块`, "");
-    enableModule(false);
-  } else {
-    //其他情况 => 重复触发 => 结束脚本
-    //$notification.post("重复触发", "", "");
+    $notification.post( `开启${DH-DoH}模块`);
+    enableModule(true);
     $done();
   }
 });
