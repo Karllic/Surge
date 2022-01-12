@@ -11,11 +11,11 @@ const getModuleStatus = new Promise((resolve) => {
 getModuleStatus.then((enabled) => {
   if (home && !enabled) {
   //家里,未开启模块 => 开启
-    $notification.post`关闭${DH-DoH}模块`);
+    $notification.post`关${DH-DoH}模块`);
     enableModule(false);
   } else if (!home && enabled) {
     //不是家里,开启了模块 => 关闭
-    $notification.post( `开启${DH-DoH}模块`);
+    $notification.post( `开${DH-DoH}模块`);
     enableModule(true);
     $done();
   }
