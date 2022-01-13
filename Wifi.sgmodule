@@ -4,4 +4,3 @@
 
 [Script]
 script1 = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Karllic/Surge/main/wifi-changed.js
-script2 = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Karllic/Surge/main/DNS%20Change.js
