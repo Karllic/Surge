@@ -15,10 +15,10 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 flushDNS = script-name=flushDNS,update-interval=600
 
 #机场信息
-Sub_info1 = script-name=Sub_info1,update-interval = 43200
+#Sub_info1 = script-name=Sub_info1,update-interval = 43200
 
 #机场信息
-Sub_info2 = script-name=Sub_info2,update-interval = 43200
+#Sub_info2 = script-name=Sub_info2,update-interval = 43200
 
 #Netflix策略组自动控制
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
