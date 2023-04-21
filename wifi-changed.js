@@ -1,4 +1,4 @@
-const WIFI_DONT_NEED_PROXYS = ['Santiano_5G' , 'Santiano'];
+const WIFI_DONT_NEED_PROXYS = ['Santiano_5G' , 'PDCN', 'PDCN_5G', 'ROSI', '602', '56', 'Cullen'];
 const CURRENT_WIFI_SSID_KEY = 'current_wifi_ssid';
 
 if (wifiChanged()) {
